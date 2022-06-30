@@ -19,5 +19,12 @@ namespace HoneyPurchasingDepartments.Models
             Clients = new List<Client>();
             Buyers = new List<Buyer>();
         }
+
+        public Department(string country, List<Buyer> buyers, List<Client> clients)
+        {
+            Country = country;
+            this.Buyers = buyers;
+            this.Clients = clients;
+        }
     }
 }

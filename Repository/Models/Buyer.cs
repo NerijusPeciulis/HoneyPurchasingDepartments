@@ -25,5 +25,16 @@ namespace HoneyPurchasingDepartments.Models
             PhoneNumber = phoneNumber;
             Clients = new List<Client>();
         }
+
+        public Buyer(string name, string adress, string email, int phoneNumber, int departmentid)
+        {
+            Name = name;
+            Adress = adress;
+            Email = email;
+            PhoneNumber = phoneNumber;
+            Id = departmentid;
+            Clients = new List<Client>();
+
+        }
     }
 }

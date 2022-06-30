@@ -16,6 +16,7 @@ namespace HoneyPurchasingDepartments.Models
         public string Adress { get; set; }
         [Required]
         public int PhoneNumber { get; set; }
+        public int DepartmentId { get; set; }
         public List<Buyer> Buyers { get; set; }
 
         public Client(string name, string surname, string email, string adress, int phoneNumber)
@@ -28,5 +29,15 @@ namespace HoneyPurchasingDepartments.Models
             Buyers = new List<Buyer>();
         }
 
+        public Client(string name, string surname, string email, string adress, int phoneNumber, int departmentId)
+        {
+            Name = name;
+            Surname = surname;
+            Email = email;
+            Adress = adress;
+            PhoneNumber = phoneNumber;
+            DepartmentId = departmentId;
+            Buyers = new List<Buyer>();
+        }
     }
 }
